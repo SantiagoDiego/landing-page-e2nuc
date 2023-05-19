@@ -4,7 +4,7 @@ box-sizing: border-box;
 }
 
 body {
-  background-color: antiquewhite;
+  background: linear-gradient(to top, rgb(1, 1, 95), rgb(36, 3, 36));
   font-family: sans-serif;
   display: block;
   padding-left: 30px;
@@ -77,17 +77,16 @@ main {
 
 #hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
   background: rgb(5,48,105);
   background: linear-gradient(90deg, rgba(5,48,105,1) 4%, rgba(131,43,136,1) 36%, rgba(117,86,241,1) 93%);
-
   border: 1px solid var(--border-grey);
   width: 100%;
   padding-top: 60px;
   padding-bottom: 40px;
   padding-left: 5px;
+  gap: 50px;
   
 }
 
@@ -148,15 +147,18 @@ color: rgb(255, 255, 255);
 }
 
 .logoropa {
-  display: block;
-  height: 100px;
-  width: 100px;
-  
+width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    display: block;
+gap: 30px;
 
 }
 
 .logoropa img {
- margin: -184px -837px -2px  753px;
+  display: block;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .ropa {
@@ -174,6 +176,7 @@ color: rgb(255, 255, 255);
 
 .hero-about-info {
   display: block;
+  justify-content: center;
 
 }
 
@@ -196,14 +199,16 @@ color: rgb(255, 255, 255);
 }
 
 h3 {
-  display: block;
+  display: flex;
+
   font-size: 1.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 750px;
+
   margin-inline-end: 0px;
   font-weight: bold;
-  
+  color: #d0c0c0;
+  justify-content: center;  
   
 }
 
@@ -224,3 +229,130 @@ h3 {
     padding-bottom: 40px;
     
   }
+
+  #discover {
+  
+    padding: 40px 50px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .discover-info {
+    color: #f2f2f2;
+    font-weight: 900;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    
+  }
+
+.discover-cards-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 20px 0;
+justify-content: space-between;
+}
+
+.discover-cards {
+  padding: 1rem;
+  gap: 16rem;
+  display: flex;
+align-items: center;
+justify-content: center;
+margin-top: auto;
+
+}
+
+.card-contenido {
+  padding-top: 10px;
+
+}
+
+.card-contenido h4 {
+  color: #f2f2f2;
+  background: #d32525;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+
+.card-contenido img { 
+  width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* CONTACTO */
+
+#Contacto {
+  padding: 80px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 65px;
+    background: linear-gradient(90deg, rgba(5,48,105,1) 4%, rgba(131,43,136,1) 36%, rgba(117,86,241,1) 93%);
+    width: 100%;
+
+}
+
+#Contacto h1 {
+  color: antiquewhite;
+  font-size: 40px;
+}
+
+.contacto-info-container { 
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+justify-content: space-between;
+}
+
+.contacto-container {
+  background: linear-gradient(30deg, rgb(55, 109, 179) 2%, rgb(58, 125, 180) 36%, rgba(117,86,241,1) 93%);
+  width: 400px;
+  height: 357px;
+display: flex;
+border-radius: 10px;
+justify-content: center;
+}
+
+.contacto-container h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.info {
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+font-size: 20px;
+}
+
+
+/* FOOTER */
+
+footer { 
+  background: linear-gradient(30deg, rgb(11, 72, 153) 2%, rgb(58, 125, 180) 36%, rgb(156, 39, 144) 93%);
+    padding: 20px 0;
+    text-align: center;
+    color: black;
+}
+.container {
+  max-width: 960px;
+    margin: 0 auto;
+    color: bisque;
+ 
+}
+
+
+
